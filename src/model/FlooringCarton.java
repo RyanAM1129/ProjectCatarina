@@ -14,33 +14,33 @@ public class FlooringCarton {
      */
     private String myLotNum;
 
-    public FlooringCarton(String theColor, String theLotNum, double theSF) {
+    public FlooringCarton(final String theColor, final String theLotNum, final double theSF) {
         this.myColor = theColor;
         this.myLotNum = theLotNum;
         this.mySF = theSF;
     }
 
-    public double getMySF() {
+    public double getSF() {
         return mySF;
     }
 
-    public String getMyColor() {
+    public void setSF(final double theSF) {
+        this.mySF = mySF;
+    }
+
+    public String getColor() {
         return myColor;
     }
 
-    public String getMyLotNum() {
-        return myLotNum;
-    }
-
-    public void setMyColor(String theColor) {
+    public void setColor(final String theColor) {
         this.myColor = myColor;
     }
 
-    public void setMyLotNum(String theLotNum) {
-        this.myLotNum = myLotNum;
+    public String getLotNum() {
+        return myLotNum;
     }
 
-    public void setMySF(double theSF) {
-        this.mySF = mySF;
+    public void setLotNum(final String theLotNum) {
+        this.myLotNum = myLotNum;
     }
 }
